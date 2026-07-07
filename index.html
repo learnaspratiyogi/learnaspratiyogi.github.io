@@ -15,14 +15,24 @@
         }
         .container {
             max-width: 600px;
-            margin: 0auto;
-            background: white;
+            margin: 0 auto;
+            background-color: #041E42; /* Premium Navy Blue */
             padding: 40px;
             border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
         }
-        h1 { color: #ff6f00; margin-bottom: 10px; }
-        p { font-size: 1.1em; line-height: 1.6; color: #666; }
+        h1 { 
+            margin-bottom: 10px; 
+            font-size: 2.5em;
+        }
+        .text-white { color: #ffffff; }
+        .text-orange { color: #ff6f00; }
+        
+        p { 
+            font-size: 1.1em; 
+            line-height: 1.6; 
+            color: #e0e6ed; /* Light readable text for contrast */
+        }
         .links { margin-top: 30px; }
         .btn {
             display: inline-block;
@@ -37,24 +47,29 @@
         }
         .btn:hover { background: #e66400; }
         .legal-links { margin-top: 40px; font-size: 0.9em; }
-        .legal-links a { color: #888; text-decoration: none; margin: 0 10px; }
-        .legal-links a:hover { text-decoration: underline; }
+        .legal-links a { color: #a0aec0; text-decoration: none; margin: 0 10px; }
+        .legal-links a:hover { color: #ffffff; text-decoration: underline; }
+        hr { border: 0; border-top: 1px solid #1e3a63; margin-bottom: 20px; }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Pratiyogi</h1>
+    <!-- Split the headline into two color spans -->
+    <h1><span class="text-white">Prati</span><span class="text-orange">yogi</span></h1>
+    
     <p>Your ultimate companion for competitive exam preparation. Master your upcoming exams with timed mock tests, custom practice sets, and detailed analytics.</p>
     
     <div class="links">
-        <a href="https://play.google.com/store" class="btn" target="_blank">Get it on Google Play</a>
+        <!-- Direct Play Store App Link -->
+        <a href="https://play.google.com/store/apps/details?id=com.pratiyogi.app" class="btn" target="_blank">Get it on Google Play</a>
     </div>
 
     <div class="legal-links">
-        <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 20px;">
+        <hr>
         <a href="https://learnaspratiyogi.github.io/pratiyogi-legal" target="_blank">Privacy Policy</a> | 
-        <a href="https://learnaspratiyogi.github.io/pratiyogi-legal/terms-and-conditions" target="_blank">Terms & Conditions</a>
+        <a href="https://learnaspratiyogi.github.io/pratiyogi-legal/terms-and-conditions" target="_blank">Terms & Conditions</a> |
+        <a href="https://learnaspratiyogi.github.io/pratiyogi-legal/disclaimer" target="_blank">Disclaimer</a>
     </div>
 </div>
 
